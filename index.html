@@ -589,7 +589,7 @@
         saveMsg(text, "user");
         userInput.value = "";
         try {
-          const res = await fetch("http://localhost:3000/api/chat", {
+          const res = await fetch("https://red-phantom-back-chat-bot.vercel.app/", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ sessionId: currentSession, message: text }),
